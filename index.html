@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Square - Authentic Italian Menswear in Ludhiana | Book Your Style Consultation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(26,26,26,0.9), rgba(45,45,45,0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23000"/><circle cx="20" cy="20" r="0.5" fill="%23d4af37" opacity="0.3"/><circle cx="80" cy="60" r="0.3" fill="%23f4e479" opacity="0.2"/></svg>');
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            color: #ffffff;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #d4af37, #f4e479);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.4rem;
+            color: #d4af37;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #cccccc;
+            line-height: 1.8;
+        }
+
+        .value-props {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .value-props li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .value-props i {
+            color: #d4af37;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Form */
+        .hero-form {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideInRight 1s ease-out;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-header h3 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Georgia', serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, #d4af37, #f4e479);
+            color: #1a1a1a;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        /* Trust Indicators */
+        .trust-section {
+            background: #f8f8f8;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .trust-indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .trust-item i {
+            font-size: 3rem;
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+
+        .trust-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .trust-item p {
+            color: #666;
+            text-align: center;
+        }
+
+        /* Social Proof */
+        .testimonials {
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 4rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #cccccc;
+        }
+
+        .testimonial-author {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* Contact Info */
+        .contact-strip {
+            background: #d4af37;
+            color: #1a1a1a;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+        }
+
+        .contact-info a {
+            color: #1a1a1a;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            transform: scale(1.05);
+        }
+
+        /* Urgency Section */
+        .urgency {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            color: #ffffff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .urgency h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #d4af37;
+        }
+
+        .urgency p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .urgency-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(255, 107, 107, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); }
+        }
+
+        .urgency-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Floating Action Button */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            padding: 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            animation: bounce 2s infinite;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-form {
+                padding: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .trust-indicators {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Strip -->
+    <div class="contact-strip">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+919465784445">
+                    <i class="fas fa-phone"></i>
+                    Call: +91 94657 84445
+                </a>
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Mall Road, Ludhiana
+                </span>
+                <span>
+                    <i class="fas fa-clock"></i>
+                    Open Mon-Sat 10AM-9PM
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Discover Authentic Italian Elegance</h1>
+                    <p class="subtitle">At Men's Square, Ludhiana's Premier Menswear Destination</p>
+                    <p>Transform your wardrobe with Italy's finest clothing crafted by master tailors. From Milan's fashion houses to your doorstep – experience luxury that speaks your language.</p>
+                    
+                    <ul class="value-props">
+                        <li><i class="fas fa-crown"></i> Authentic Italian Designer Collections</li>
+                        <li><i class="fas fa-cut"></i> Expert Custom Tailoring Services</li>
+                        <li><i class="fas fa-star"></i> 15+ Years of Styling Excellence</li>
+                        <li><i class="fas fa-handshake"></i> Personal Style Consultation</li>
+                        <li><i class="fas fa-medal"></i> Premium Quality Guarantee</li>
+                    </ul>
+                </div>
+
+                <div class="hero-form">
+                    <div class="form-header">
+                        <h3>Book Your FREE Style Consultation</h3>
+                        <p>Get personalized styling advice from our Italian fashion experts</p>
+                    </div>
+                    
+                    <form id="consultationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select Your Interest</option>
+                                <option value="formal-suits">Formal Business Suits</option>
+                                <option value="casual-wear">Italian Casual Wear</option>
+                                <option value="wedding-collection">Wedding Collection</option>
+                                <option value="accessories">Premium Accessories</option>
+                                <option value="custom-tailoring">Custom Tailoring</option>
+                                <option value="complete-wardrobe">Complete Wardrobe Makeover</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Approximate Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select Budget Range</option>
+                                <option value="10k-25k">₹10,000 - ₹25,000</option>
+                                <option value="25k-50k">₹25,000 - ₹50,000</option>
+                                <option value="50k-100k">₹50,000 - ₹1,00,000</option>
+                                <option value="100k+">₹1,00,000+</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            Book My FREE Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Men's Square?</h2>
+            <p class="section-subtitle">Your trusted partner in Italian fashion excellence</p>
+            
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <h4>Authentic Italian Brands</h4>
+                    <p>Direct partnerships with Milan & Rome fashion houses</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-users"></i>
+                    <h4>5000+ Happy Customers</h4>
+                    <p>Ludhiana's most trusted name in men's fashion</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Perfect Fit Guarantee</h4>
+                    <p>Free alterations until you're completely satisfied</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>Expert Style Consultation</h4>
+                    <p>Personal stylists trained in Italian fashion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: #d4af37;">What Our Clients Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Men's Square transformed my entire wardrobe. The Italian suits are incredible quality and the custom tailoring is perfect. I feel confident every day!"
+                    </div>
+                    <div class="testimonial-author">- Rajesh Sharma, Business Owner</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Best Italian clothing store in Punjab! The staff knows fashion inside out and helped me choose the perfect wedding collection. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">- Arjun Singh, Groom</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Authentic Italian brands at great prices. The personal styling service is excellent. Now I know exactly what suits my personality and profession."
+                    </div>
+                    <div class="testimonial-author">- Dr. Vikram Gupta, Professional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency">
+        <div class="container">
+            <h3>Limited Time Offer!</h3>
+            <p>Book your consultation this week and get 20% off your first purchase + FREE styling session worth ₹2,000</p>
+            <a href="tel:+919465784445" class="urgency-btn">
+                <i class="fas fa-phone"></i> Call Now - Don't Miss Out!
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919465784445?text=Hi%20Men's%20Square!%20I%20want%20to%20book%20a%20free%20style%20consultation." class="floating-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp Us
+    </a>
+
+    <script>
+        // Form submission handler
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const interest = formData.get('interest');
+            
+            // Create WhatsApp message
+            const message = `Hi Men's Square! I want to book a FREE style consultation.
+            
+Name: ${name}
+Phone: ${phone}
+Interest: ${interest}
+            
+Please contact me to schedule my appointment.`;
+            
+            // Redirect to WhatsApp
+            const whatsappUrl = `https://wa.me/919465784445?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            alert('Thank you! You will be redirected to WhatsApp to complete your booking.');
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 10) {
+                e.target.value = value;
+            }
+        });
+
+        // Smooth animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.trust-item, .testimonial').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add fadeInUp keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
